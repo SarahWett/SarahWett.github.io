@@ -104,6 +104,7 @@ li {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   justify-content: space-evenly;
+  margin: 150px auto;
 }
 
 .grid-item1 {
@@ -139,10 +140,6 @@ li {
   color: rgb(59, 59, 59);
 }
 
-/*p {
-  display: flex;
-}
-*/
 #leftp {
   font-size: 50px;
   float: left;
@@ -190,19 +187,30 @@ li {
 }
 
 #journey {
-  margin: auto;
   font-weight: bold;
 }
 
-#headerTwo,
-#singleLine,
-#journey {
-  margin: 80px 100px;
+#articleOne,
+#articleTwo {
+  margin: 40px auto;
+  width: 300px;
+  height: 250px;
+  overflow: scroll;
+}
+
+#articleOne {
+  float: left;
+  margin-left: 200px;
+}
+
+#articleTwo {
+  float: right;
+  margin-right: 200px;
 }
 
 ul,
 li {
-  list-style-type: none;
+  list-style-type: square;
 }
 
 #headerOne {
@@ -215,6 +223,9 @@ li {
   background-image: radial-gradient(#edf6f9, #ffddd2, #e29578);
   border-radius: 12px;
   padding: 0.5rem;
-  margin: 80px 100px;
   align-self: center;
+}
+
+#singleLine {
+  text-align: justify;
 }
