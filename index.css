@@ -399,42 +399,7 @@ a {
   }
 }
 
-/*#projects {
-  background-color: #ffddd2;
-  border-radius: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
 
-.card {
-  font-family: Raleway, sans-serif;
-  margin-top: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 80px;
-  border-radius: 25px;
-}
-
-.card-title {
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.btn-secondary:hover {
-  text-shadow: none;
-  border-radius: 12px;
-  background-color: whitesmoke;
-  box-shadow: 0 0.5em 0.5em -0.4em;
-  transform: translateY(-0.2em);
-}
-
-#projectHeading {
-  text-align: center;
-  font-weight: bold;
-  padding-top: 100px;
-  color: #363635;
-}*/
 
 #tools {
   text-align: center;
@@ -553,6 +518,7 @@ svg {
 
 #projectHeading {
   margin: 100px 180px;
+  padding: 50px 0;
   background-image: radial-gradient(#edf6f9, #ffddd2, #e29578);
   border-radius: 8px;
   box-shadow: #000000;
