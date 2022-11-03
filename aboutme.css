@@ -208,8 +208,7 @@ li {
   margin-right: 200px;
 }
 
-ul,
-li {
+article ul li {
   list-style-type: square;
 }
 
