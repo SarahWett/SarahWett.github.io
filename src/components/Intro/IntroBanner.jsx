@@ -2,12 +2,12 @@ import { StyledContainer, StyledIcons } from "./IntroBanner.styles";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { useState, useEffect } from "react";
-// import { NoSsr } from "next/dynamic";
-// import dynamic from "next/dynamic";
+import { NoSsr } from "next/dynamic";
+import dynamic from "next/dynamic";
 
-// const DynamicIntroBanner = dynamic(() => import("./IntroBanner"), {
-//   ssr: false,
-// });
+const DynamicIntroBanner = dynamic(() => import("./IntroBanner"), {
+  ssr: false,
+});
 
 export default function Introduction() {
   const [loopNum, setLoopNum] = useState(0);
@@ -93,7 +93,6 @@ export default function Introduction() {
           </h1>
 
           <div>
-            {/* <NoSsr> */}
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -101,12 +100,13 @@ export default function Introduction() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <p className="short_intro paragraph-light">
+                  <p className="short_intro paragraph-light ">
                     I&apos;m a Web Developer based in Germany with a special
                     faible for user experience design in digital products.
                     I&apos;m passionate about improving the lives of others and
                     am constantly looking to learn new things everyday.
-                    <div className="interactive-text">
+                    <br />
+                    <span className="interactive-text">
                       {`Because to me everything in life is about`}{" "}
                       <span
                         className="txt-rotate"
@@ -115,12 +115,11 @@ export default function Introduction() {
                       >
                         <span className="wrap animate__fast">{text}</span>
                       </span>
-                    </div>
+                    </span>
                   </p>
                 </div>
               )}
             </TrackVisibility>
-            {/* </NoSsr> */}
           </div>
         </section>
       </StyledContainer>
