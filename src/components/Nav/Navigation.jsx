@@ -4,6 +4,7 @@ import Image from "next/image";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/logo3.jpeg";
+import { useRouter } from "next/router";
 
 //Styles CSS
 
@@ -12,6 +13,7 @@ import { StyledContainer } from "./Navigation.styles";
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => {
@@ -56,7 +58,7 @@ export default function NavBar() {
         <Navbar.Collapse className="all-navs" id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="#home"
+              href="/"
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
@@ -65,7 +67,7 @@ export default function NavBar() {
               home.
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="/SkillSection"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }

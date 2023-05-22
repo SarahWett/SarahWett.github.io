@@ -1,9 +1,12 @@
-import { StyledContainer, StyledIcons } from "./IntroBanner.styles";
+import { Background, StyledContainer, StyledIcons } from "./IntroBanner.styles";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { useState, useEffect } from "react";
 import { NoSsr } from "next/dynamic";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import colorSharp2 from "../../assets/color-sharp2.png";
+import Image from "next/image";
 
 const DynamicIntroBanner = dynamic(() => import("./IntroBanner"), {
   ssr: false,
@@ -17,6 +20,7 @@ export default function Introduction() {
   const [index, setIndex] = useState(1);
   const toRotate = ["passion", "curiosity", "creativity", "teamwork"];
   const period = 2000;
+  const router = useRouter();
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -57,11 +61,16 @@ export default function Introduction() {
 
   return (
     <>
+      <Background
+        className="background-image-left"
+        src={colorSharp2}
+        alt="Image"
+      />
       <StyledContainer>
         <section className="intro-wrap">
           <h1 className="firstHeading">Hi, I&apos;m&nbsp; </h1>
           <div>
-            <a href="aboutme.html" className="link-sw">
+            <a href="/About" className="link-sw">
               Sarah Wettengel
             </a>
           </div>

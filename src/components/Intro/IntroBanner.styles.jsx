@@ -1,11 +1,28 @@
 import styled from "styled-components";
+import Image from "next/image";
+
+export const Background = styled(Image)`
+  display: flex;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  z-index: -1;
+`;
 
 export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 240px;
+  margin: 200px 80px 0 80px;
+  padding: 50px 0 50px 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
   .intro-wrap {
     display: flex;
