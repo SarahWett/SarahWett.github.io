@@ -46,46 +46,64 @@ export const Skills = () => {
         src={colorSharp}
         alt="Image"
       />
-      <Header>Skills.</Header>
-      <StyledSkillContainer id="skills">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <StyledSkillBox className="skill-bx wow zoomIn">
-                <StyledPara>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.<br></br> Lorem Ipsum has been the
-                  industry&apos;s standard dummy text.
-                </StyledPara>
-                <StyledSkillSlider className="skill-slider">
-                  <Carousel
-                    responsive={responsive}
-                    infinite={true}
-                    className="owl-carousel owl-theme skill-slider"
-                  >
-                    <div className="item">
-                      <Image src={meter1} alt="Image" />
-                      <SkillNames>Web Development</SkillNames>
-                    </div>
-                    <div className="item">
-                      <Image src={meter2} alt="Image" />
-                      <SkillNames>Brand Identity</SkillNames>
-                    </div>
-                    <div className="item">
-                      <Image src={meter3} alt="Image" />
-                      <SkillNames>Logo Design</SkillNames>
-                    </div>
-                    <div className="item">
-                      <Image src={meter1} alt="Image" />
-                      <SkillNames>Web Development</SkillNames>
-                    </div>
-                  </Carousel>
-                </StyledSkillSlider>
-              </StyledSkillBox>
+      <StyledSkillContainer>
+        {/* <Image className="background-image-left" src={colorSharp2} alt="Image" /> */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <div class="skills">
+          <div class="each html">
+            <div class="box">
+              <div class="content">
+                <h2>FRONTEND</h2>
+                <p>html / CSS / JS / React / Angular / MUI </p>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+              </div>
+            </div>
+          </div>
+          <div class="each css">
+            <div class="box">
+              <div class="content">
+                <h2>UX</h2>
+                <p>
+                  Google UX Certification<br></br>
+                  Interaction Design Foundation
+                </p>
+                <i class="fa-brands fa-google"></i>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="box">
+              <h2>SKILLS</h2>
+            </div>
+          </div>
+          <div class="each js">
+            <div class="box">
+              <div class="content">
+                <i class="fa-brands fa-node"></i>
+                <h2>BACKEND</h2>
+                <p>Node / MongoDB / GraphQL / SQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="each ng">
+            <div class="box">
+              <div class="content">
+                <i class="fa-brands fa-react"></i>
+                <h2>MOBILE</h2>
+                <p>React Native / Ionic</p>
+              </div>
             </div>
           </div>
         </div>
-        {/* <Image className="background-image-left" src={colorSharp2} alt="Image" /> */}
       </StyledSkillContainer>
     </>
   );

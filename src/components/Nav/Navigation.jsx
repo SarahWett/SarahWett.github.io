@@ -76,7 +76,7 @@ export default function NavBar() {
               skills.
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="/Projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }

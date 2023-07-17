@@ -14,7 +14,7 @@ export const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 200px 80px 0 80px;
+  margin: 130px 80px 0 80px;
   padding: 50px 0 50px 0;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.31);
